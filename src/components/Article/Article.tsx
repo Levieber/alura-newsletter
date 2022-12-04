@@ -1,8 +1,6 @@
-import data from "../../assets/articles.json";
+import { IArticle } from "./ArticleList";
 
-type ArticleProps = typeof data[0];
-
-const Article = ({ text, title, tags, alt, image }: ArticleProps) => {
+const Article = ({ text, title, tags, alt, image }: IArticle) => {
   return (
     <article className="article-card">
       <h3 className="text-xl font-bold dark:text-gray-200">{title}</h3>
