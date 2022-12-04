@@ -4,7 +4,7 @@ type ArticleProps = typeof data[0];
 
 const Article = ({ text, title, tags, alt, image }: ArticleProps) => {
   return (
-    <article className="bg-gray-200 text-alura-200 dark:bg-dark-200 rounded-xl shadow-lg p-5 flex flex-col items-center gap-4 cursor-pointer transition-shadow sm:hover:shadow-md sm:hover:shadow-gray-400 sm:hover:dark:shadow-black">
+    <article className="article-card">
       <h3 className="text-xl font-bold dark:text-gray-200">{title}</h3>
       <ul className="w-full flex-row justify-center gap-2 pr-5 hidden sm:flex">
         {tags.map((tag) => (

@@ -45,10 +45,7 @@ const Form = ({ setUser }: FormProps) => {
         pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
         title="Exemplo de formato: example@email.com"
       />
-      <button
-        type="submit"
-        className="py-1 px-5 uppercase w-full max-w-xs bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black"
-      >
+      <button type="submit" className="button">
         Entrar
       </button>
     </form>

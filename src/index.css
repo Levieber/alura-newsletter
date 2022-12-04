@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .input {
+    @apply dark:bg-dark-200 text-dark-200 dark:text-gray-200 rounded-full py-1 pl-5 outline-none placeholder:text-gray-400 placeholder:text-xs placeholder:uppercase placeholder:font-bold focus:border-2 focus:border-alura-200 focus:dark:border-alura-100 focus:invalid:border-2 focus:invalid:border-red-700 focus:invalid:dark:border-red-700;
+  }
+
+  .button {
+    @apply py-1 px-5 uppercase w-full max-w-xs bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black;
+  }
+
+  .article-card {
+    @apply bg-gray-200 text-alura-200 dark:bg-dark-200 rounded-xl shadow-lg p-5 flex flex-col items-center gap-4 cursor-pointer transition-shadow sm:hover:shadow-md sm:hover:shadow-gray-400 sm:hover:dark:shadow-black;
+  }
+}
