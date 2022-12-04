@@ -11,8 +11,14 @@ const ToggleTheme = () => {
 
   return (
     <div className="hidden sm:block">
-      <MoonIcon className="h-8 text-gray-100 cursor-pointer dark:hidden" onClick={toggle} />
-      <SunIcon className="h-8 text-gray-100 cursor-pointer hidden dark:block" onClick={toggle} />
+      <MoonIcon
+        className="h-8 text-gray-100 cursor-pointer dark:hidden sm:hover:scale-150 transition-all"
+        onClick={toggle}
+      />
+      <SunIcon
+        className="h-8 text-gray-100 cursor-pointer hidden dark:block sm:hover:scale-150 transition-all"
+        onClick={toggle}
+      />
     </div>
   );
 };
